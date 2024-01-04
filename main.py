@@ -26,3 +26,5 @@ total_quantity = sum(order["quantity"] for order in orders)
 average_quantity = total_quantity / len(orders)
 
 
+print("Загальна кількість товарів:", total_quantity)
+print("Середня кількість товарів на замовлення:", average_quantity)
