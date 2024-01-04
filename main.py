@@ -17,3 +17,12 @@ with open("orders.json", "w") as json_file:
     json.dump(orders, json_file)
 
 print("Дані успішно експортовано.")
+
+with open("orders.json", "r") as json_file:
+    orders = json.load(json_file)
+
+
+total_quantity = sum(order["quantity"] for order in orders)
+average_quantity = total_quantity / len(orders)
+
+
